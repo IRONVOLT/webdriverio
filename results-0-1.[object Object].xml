@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="1" failures="1" errors="1" skipped="0">
+  <testsuite name="some info" timestamp="2024-03-25T16:44:12" time="1.092" tests="1" failures="1" errors="1" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="some info"/>
+      <property name="capabilities" value="chrome.123_0_6312_58.windows"/>
+      <property name="file" value="file:///C:/myFolder/myProjects/testWebdriverio/test/specs/test2.ts"/>
+    </properties>
+    <testcase classname="chrome.123_0_6312_58.windows.some_info" name="test one" time="1.091">
+      <failure/>
+      <error message="element not interactable&#xA;  (Session info: chrome=123.0.6312.58)"/>
+      <system-out><![CDATA[
+COMMAND: POST /session/a378e8845b259541a29b8e27f7014bbb/url - {"url":"http://google.com/"}
+RESULT: {"url":"http://google.com/"}
+COMMAND: POST /session/a378e8845b259541a29b8e27f7014bbb/element - {"using":"xpath","value":"//*[text()=\"Принять все\"]"}
+RESULT: {"using":"xpath","value":"//*[text()=\"Принять все\"]"}
+COMMAND: POST /session/a378e8845b259541a29b8e27f7014bbb/execute/sync - {"script":"return (function (elem, id) {\n        return (function parentElement() {\n        return this.parentElement;\n    }).call(elem, id);\n    }).apply(null, arguments)","args":[{"element-6066-11e4-a52e-4f735466cecf":"f.1322A6D6F4D2988934C3D149EC5ABF71.d.C56284FB3189A366A0B469CB3C227735.e.34","ELEMENT":"f.1322A6D6F4D2988934C3D149EC5ABF71.d.C56284FB3189A366A0B469CB3C227735.e.34"}]}
+RESULT: {"script":"return (function (elem, id) {\n        return (function parentElement() {\n        return this.parentElement;\n    }).call(elem, id);\n    }).apply(null, arguments)","args":[{"element-6066-11e4-a52e-4f735466cecf":"f.1322A6D6F4D2988934C3D149EC5ABF71.d.C56284FB3189A366A0B469CB3C227735.e.34","ELEMENT":"f.1322A6D6F4D2988934C3D149EC5ABF71.d.C56284FB3189A366A0B469CB3C227735.e.34"}]}
+COMMAND: POST /session/a378e8845b259541a29b8e27f7014bbb/element/f.1322A6D6F4D2988934C3D149EC5ABF71.d.C56284FB3189A366A0B469CB3C227735.e.35/click - {}
+RESULT: {}
+COMMAND: POST /session/a378e8845b259541a29b8e27f7014bbb/element - {"using":"css selector","value":"[name=\"q\"]"}
+RESULT: {"using":"css selector","value":"[name=\"q\"]"}
+COMMAND: POST /session/a378e8845b259541a29b8e27f7014bbb/element/f.1322A6D6F4D2988934C3D149EC5ABF71.d.C56284FB3189A366A0B469CB3C227735.e.17/clear - {}
+RESULT: {}
+COMMAND: POST /session/a378e8845b259541a29b8e27f7014bbb/element/f.1322A6D6F4D2988934C3D149EC5ABF71.d.C56284FB3189A366A0B469CB3C227735.e.17/value - {"text":"666"}
+COMMAND: DELETE /session/a378e8845b259541a29b8e27f7014bbb - {}
+RESULT: {}
+]]></system-out>
+      <system-err><![CDATA[
+element not interactable: element not interactable
+  (Session info: chrome=123.0.6312.58)
+    at async Context.<anonymous> (C:\myFolder\myProjects\testWebdriverio\test\specs\test2.ts:7:5)
+]]></system-err>
+    </testcase>
+  </testsuite>
+</testsuites>
